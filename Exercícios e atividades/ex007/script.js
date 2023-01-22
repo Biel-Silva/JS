@@ -23,17 +23,31 @@ if (!(a == "Locus" && b != 5)){
 */
 
 //Novo teste de aprovação
-
+/*
 var media = 6
+var limite_faltas = 250
 
 var aluno = prompt("Qual é o nome do aluno")
 var nota = Number(prompt(`Qual foi a nota do aluno ${aluno}`))
 var faltas = Number(prompt(`Quantas faltas o aluno ${aluno} teve`))
 
-if (nota >= media && faltas < 250){
+if (nota >= media && faltas < limite_faltas){
     document.write(`<h2 style="color:#00ff00">O aluno ${aluno} está aprovado por nota e faltas</h2>"`)
-} else if (nota >= media && faltas >= 250) {
+} else if (nota >= media && faltas >= limite_faltas) {
     document.write(`<h2 style="color:#ff0000">O aluno ${aluno} está reprovado por falta</h2>"`)
-} else {
+} else { 
     document.write(`<h2 style="color:#ff0000">O aluno ${aluno} está reprovado por nota</h2>`)
 }
+*/
+
+//Operador ternário
+
+var media = 6
+var limite_faltas = 250
+
+var aluno = prompt("Qual é o nome do aluno")
+var nota = Number(prompt(`Qual foi a nota do aluno ${aluno}`))
+var faltas = Number(prompt(`Quantas faltas o aluno ${aluno} teve`))
+
+var resultado = (nota >= media && faltas <= limite_faltas) ? 'Aprovado' : 'Reprovado'
+document.write(resultado)
