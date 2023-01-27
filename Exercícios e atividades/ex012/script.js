@@ -11,7 +11,12 @@ console.log(x)
 if (true){
     let a = 1
     console.log(a)
+    console.log(x)
 }
+ var a = {
+    bloc: "afff",
+    id: 1,
+ }
 
 //function
 function função(){
@@ -19,4 +24,3 @@ function função(){
     console.log(b)
 }
 
-console.log(b)
