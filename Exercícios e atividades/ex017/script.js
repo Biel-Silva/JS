@@ -13,3 +13,5 @@ document.write(data.getMilliseconds())
 var b = new Date()
 
 console.log(b.constructor)
+
+window.document.write(window.document.characterSet)
