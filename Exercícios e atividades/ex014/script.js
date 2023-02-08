@@ -1,7 +1,12 @@
 
+
 function exibirArtigo(id, callbackSucesso, callbackErro){
+    var id = prompt('Digite o id do artigo')
+    var NomeArtigo = prompt('Digite o titulo do artigo')
+    var Descrição = prompt('Digite agora uma breve descrição')
+
     if ( true ){
-        callbackSucesso('Funções do primeiro grau', 'Funções do 1 grau são funções matemáticas')
+        callbackSucesso(NomeArtigo, Descrição)
     } else {
         callbackErro('Erro ao recuperar dados')
     }
@@ -14,7 +19,3 @@ var callbackSucesso = function(nomeArtigo, descriçaoArtigo){
 var callbackErro = function(erro){
     document.write('<p>'+erro+'</p>')
 }
-
-exibirArtigo(001, callbackSucesso, callbackErro)
-
-callbackSucesso('Funções de segundo grau', 'São funções mais complexas')
