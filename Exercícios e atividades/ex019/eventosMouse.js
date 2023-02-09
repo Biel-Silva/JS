@@ -1,3 +1,9 @@
-function acao(){
-    confirm("It's ok?")
+//Mouse events
+function mouseOver() {
+    alert('Entrei')
 }
+
+function mouseOut() {
+    alert('Saí')
+}
+
