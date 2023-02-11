@@ -1,27 +1,31 @@
-function teclaPressionada(){
-    alert('Você está teclando')
+//Ao apertar num determinado elemento
+function aoApertar(){
+    alert('Você clicou na tecla')
 }
 
-function teclaApertada(){
-    alert('Tecla soltada')
+//Ao soltar a tecla num determinado elemento
+function aoSoltar(){
+    alert('Você soltou a tecla')
 }
 
-function Shift(event){
-    if (event.shiftKey) {
-        alert('Você apertou o "shift"')
-        console.log(event)
-    } else {
-        console.log(event)
+//Ao apertar no documento TODO
+document.addEventListener('keydown', function(event){
+
+    if (event.key == 'Enter'){
+        alert('Você apertou o "Enter"')
+        console.log(event.key)
     }
+})
+
+//Ao soltar no documento TODO
+document.addEventListener('keyup', function(event){
+    console.log(event.key)
+})
+
+let x = {
+    nome : 'Gabriel',
+    idade : 15,
+    altura : 1.63,
 }
 
-function Alt(event){
-    if (event.altKey){
-        alert('Você pressionou o "alt"')
-        console.log(event)
-    } else {
-        console.log(event)
-    }
-}
-
-
+console.log(x)

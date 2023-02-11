@@ -8,17 +8,11 @@
 </head>
 
 <body>
-    <p>Ao apertar:</p>
-    <input type="text" onkeydown="teclaPressionada()"><br>
+    <p>Ao Apertar:</p>
+    <input type="text" onkeydown="aoApertar()">
 
-    <p>Após apertar:</p>
-    <input type="text" onkeyup="teclaApertada()"><br>
-
-    <p>Para o SHIFT:</p>
-    <input type="text" onkeydown="Shift(event)"><br> <!--"event" captura o valor do evento do input-->
-
-    <p>Para o Alt:</p>
-    <input type="text" onkeydown="Alt(event)">
+    <p>Apertando e soltando:</p>
+    <input type="text" onkeyup="aoSoltar()">
 
     <script src="eventos_teclado.js"></script>
 </body>
